@@ -8,28 +8,48 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selection = 0
- 
+    @State private var products: [Product] = []
+    @State private var cartItems: [CartItem] = []
+    @State private var selectedDays: [UUID: Int] = [:]
+    
+    init() {
+        loadData()
+    }
+    
     var body: some View {
-        TabView(selection: $selection){
-            Text("First View")
-                .font(.title)
+        TabView {
+            BoatsView(
+                cartItems: $cartItems,
+                selectedDays: $selectedDays,
+                products: products
+            )
+            .tabItem {
+                Image(systemName: "map")
+                Text("Катера")
+            }
+            
+            CartView(cartItems: $cartItems)
                 .tabItem {
-                    VStack {
-                        Image("first")
-                        Text("First")
-                    }
+                    Image(systemName: "cart")
+                    Text("Корзина")
                 }
-                .tag(0)
-            Text("Second View")
-                .font(.title)
+            
+            ProfileView()
                 .tabItem {
-                    VStack {
-                        Image("second")
-                        Text("Second")
-                    }
+                    Image(systemName: "person")
+                    Text("Профиль")
                 }
-                .tag(1)
+        }
+    }
+    
+    private mutating func loadData() {
+        if let url = Bundle.main.url(forResource: "data", withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: url)
+                products = try JSONDecoder().decode([Product].self, from: data)
+            } catch {
+                print("Error: \(error)")
+            }
         }
     }
 }

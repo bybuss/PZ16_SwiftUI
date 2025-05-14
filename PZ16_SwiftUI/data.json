@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Яхта Lux Deluxe",
+    "description": "Роскошная яхта с 4 каютами, подходит для мероприятий",
+    "price_per_day": 70000,
+    "image": "yacht_1",
+    "bonus_points": 100
+  },
+  {
+    "name": "Скоростной катер Thunder",
+    "description": "Развивает скорость до 80 км/ч, 6 пассажиров",
+    "price_per_day": 35000,
+    "image": "speedboat_1",
+    "bonus_points": 60
+  },
+  {
+    "name": "Парусник WindMaster",
+    "description": "Классическая парусная яхта для романтических прогулок",
+    "price_per_day": 45000,
+    "image": "sailboat_1",
+    "bonus_points": 75
+  },
+  {
+    "name": "Катер Fisher Pro",
+    "description": "Идеален для рыбалки, вместимость 4 человека",
+    "price_per_day": 25000,
+    "image": "fishing_boat",
+    "bonus_points": 40
+  },
+  {
+    "name": "Яхта Ocean King",
+    "description": "3 палубы, джакузи, экипаж включен",
+    "price_per_day": 120000,
+    "image": "yacht_2",
+    "bonus_points": 150
+  },
+  {
+    "name": "Гоночная лодка Racer X",
+    "description": "Экстремальные заезды, 2 места",
+    "price_per_day": 55000,
+    "image": "race_boat",
+    "bonus_points": 80
+  }
+]

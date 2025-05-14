@@ -15,6 +15,11 @@
 		4FF2656C2DD532620035D5C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FF2656A2DD532620035D5C3 /* LaunchScreen.storyboard */; };
 		4FF265772DD532630035D5C3 /* PZ16_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF265762DD532630035D5C3 /* PZ16_SwiftUITests.swift */; };
 		4FF265822DD532630035D5C3 /* PZ16_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF265812DD532630035D5C3 /* PZ16_SwiftUIUITests.swift */; };
+		4FF265902DD532BE0035D5C3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF2658F2DD532BE0035D5C3 /* Product.swift */; };
+		4FF265922DD5369D0035D5C3 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF265912DD5369D0035D5C3 /* CartView.swift */; };
+		4FF265942DD536DF0035D5C3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF265932DD536DF0035D5C3 /* ProfileView.swift */; };
+		4FF265D22DD539810035D5C3 /* BoatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF265D12DD539810035D5C3 /* BoatsView.swift */; };
+		4FF265D62DD53F120035D5C3 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 4FF265D52DD53F120035D5C3 /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		4FF2657D2DD532630035D5C3 /* PZ16_SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PZ16_SwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FF265812DD532630035D5C3 /* PZ16_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PZ16_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		4FF265832DD532630035D5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FF2658F2DD532BE0035D5C3 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		4FF265912DD5369D0035D5C3 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		4FF265932DD536DF0035D5C3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		4FF265D12DD539810035D5C3 /* BoatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoatsView.swift; sourceTree = "<group>"; };
+		4FF265D52DD53F120035D5C3 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +109,14 @@
 		4FF2655E2DD532610035D5C3 /* PZ16_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				4FF265D52DD53F120035D5C3 /* data.json */,
+				4FF2658F2DD532BE0035D5C3 /* Product.swift */,
 				4FF2655F2DD532610035D5C3 /* AppDelegate.swift */,
 				4FF265612DD532610035D5C3 /* SceneDelegate.swift */,
 				4FF265632DD532610035D5C3 /* ContentView.swift */,
+				4FF265D12DD539810035D5C3 /* BoatsView.swift */,
+				4FF265912DD5369D0035D5C3 /* CartView.swift */,
+				4FF265932DD536DF0035D5C3 /* ProfileView.swift */,
 				4FF265652DD532620035D5C3 /* Assets.xcassets */,
 				4FF2656A2DD532620035D5C3 /* LaunchScreen.storyboard */,
 				4FF2656D2DD532620035D5C3 /* Info.plist */,
@@ -242,6 +257,7 @@
 				4FF2656C2DD532620035D5C3 /* LaunchScreen.storyboard in Resources */,
 				4FF265692DD532620035D5C3 /* Preview Assets.xcassets in Resources */,
 				4FF265662DD532620035D5C3 /* Assets.xcassets in Resources */,
+				4FF265D62DD53F120035D5C3 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FF265922DD5369D0035D5C3 /* CartView.swift in Sources */,
 				4FF265602DD532610035D5C3 /* AppDelegate.swift in Sources */,
+				4FF265902DD532BE0035D5C3 /* Product.swift in Sources */,
 				4FF265622DD532610035D5C3 /* SceneDelegate.swift in Sources */,
+				4FF265942DD536DF0035D5C3 /* ProfileView.swift in Sources */,
 				4FF265642DD532610035D5C3 /* ContentView.swift in Sources */,
+				4FF265D22DD539810035D5C3 /* BoatsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
